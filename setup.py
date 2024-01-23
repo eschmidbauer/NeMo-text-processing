@@ -27,7 +27,8 @@ from itertools import chain
 
 import setuptools
 
-spec = importlib.util.spec_from_file_location('package_info', 'nemo_text_processing/package_info.py')
+spec = importlib.util.spec_from_file_location(
+    'package_info', 'nemo_text_processing/package_info.py')
 package_info = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(package_info)
 
@@ -214,6 +215,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         # Additional Setting
         'Environment :: Console',
         'Natural Language :: English',
